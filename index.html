@@ -52,12 +52,10 @@
 </head>
 <body class="antialiased text-slate-900 selection:bg-gold selection:text-white">
 
-    <!-- FIXED STICKY BACKGROUND VIDEO CANVAS -->
-    <!-- The -z-10 and fixed positioning locks the video frame behind all website content layers as the page moves up -->
+   <!-- FIXED STICKY BACKGROUND VIDEO CANVAS -->
     <div class="fixed inset-0 w-full h-full -z-10 overflow-hidden bg-charcoal">
-        <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-30 mix-blend-overlay">
-            <!-- Replace this placeholder source with your active enterprise maritime BROLL video file -->
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-cargo-ship-in-the-middle-of-the-ocean-41584-large.mp4" type="video/mp4">
+        <video autoplay loop muted playsinline webkit-playsinline preload="auto" class="w-full h-full object-cover opacity-25 mix-blend-overlay pointer-events-none">
+            <source src="https://player.vimeo.com/external/371433846.hd.mp4?s=236da2f3c0ee273d26ebf9dbfe98da3291244f77&profile_id=175&oauth2_token_id=57447761" type="video/mp4">
         </video>
     </div>
 
