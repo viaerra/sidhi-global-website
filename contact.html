@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Contact Us | SIDHI GLOBAL TRADING PVT LTD</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "charcoal": "#0B0F17",
+                        "gold": "#C5A059"
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"],
+                        "display": ["Montserrat", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0B0F17; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .liquid-glass {
+            background: linear-gradient(180deg, rgba(30, 37, 48, 0.7) 0%, rgba(15, 20, 28, 0.85) 100%);
+            backdrop-filter: blur(24px) saturate(140%);
+            -webkit-backdrop-filter: blur(24px) saturate(140%);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body class="antialiased text-slate-200">
+
+    <div class="fixed inset-0 w-full h-full -z-10 overflow-hidden bg-charcoal">
+        <video autoplay loop muted playsinline webkit-playsinline preload="auto" class="w-full h-full object-cover opacity-15 pointer-events-none">
+            <source src="bg_vessel.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- NAVIGATION HEADER -->
+    <nav class="sticky top-0 z-50 w-full h-16 flex justify-between items-center px-6 md:px-16 lg:px-24 border-b border-white/[0.06] bg-[#0B0F17]/75 backdrop-blur-xl backdrop-saturate-150">
+        <div class="font-display font-bold text-sm tracking-[0.3em] text-white">SIDHI GLOBAL</div>
+        <div class="hidden md:flex gap-12 items-center">
+            <a class="font-display text-[11px] uppercase font-semibold tracking-[0.2em] text-white/60 hover:text-gold transition-colors" href="index.html">Home</a>
+            <a class="font-display text-[11px] uppercase font-semibold tracking-[0.2em] text-white/60 hover:text-gold transition-colors" href="about.html">About Us</a>
+            <a class="font-display text-[11px] uppercase font-semibold tracking-[0.2em] text-gold border-b border-gold pb-1" href="contact.html">Contact Us</a>
+        </div>
+        <div>
+            <a href="contact.html" class="font-display text-[10px] uppercase font-bold tracking-[0.2em] border border-gold/40 px-5 py-2.5 text-gold hover:bg-gold hover:text-charcoal transition-all rounded-xs">Inquire</a>
+        </div>
+    </nav>
+
+    <!-- CONTACT CONTAINER -->
+    <main class="relative px-6 md:px-16 lg:px-24 py-24 min-h-[85vh] flex items-center">
+        <div class="w-full max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-5 space-y-6">
+                <span class="font-display text-[10px] uppercase tracking-[0.3em] text-gold font-bold block">Trade Desk Link</span>
+                <h1 class="font-display font-bold text-4xl text-white tracking-tight">CONTACT US</h1>
+                <div class="w-12 h-[2px] bg-gold"></div>
+                <p class="font-sans text-sm font-light text-slate-300 leading-[1.8] max-w-sm">
+                    Specify your precise chemical, metallurgical, or bulk agricultural mandates. A designated desk liquidity officer will evaluate specifications within one operational business cycle.
+                </p>
+                <div class="pt-4 space-y-3 font-sans text-xs text-slate-400">
+                    <div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-gold">mail</span> info@sidhiglobal.com</div>
+                    <div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-gold">call</span> +91 80 4956 7890</div>
+                    <div class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-gold">location_on</span> Bengaluru, Karnataka, India</div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7">
+                <div class="liquid-glass p-8 sm:p-10">
+                    <form class="space-y-6" action="https://formspree.io/f/your_id_here" method="POST">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block font-display text-[10px] font-semibold text-slate-400 mb-2 uppercase tracking-[0.15em]">Your Name</label>
+                                <input name="name" class="w-full bg-charcoal/60 border border-white/10 text-white px-4 py-3 text-sm rounded-none focus:ring-1 focus:ring-gold focus:border-gold" type="text" required>
+                            </div>
+                            <div>
+                                <label class="block font-display text-[10px] font-semibold text-slate-400 mb-2 uppercase tracking-[0.15em]">Company Name</label>
+                                <input name="company" class="w-full bg-charcoal/60 border border-white/10 text-white px-4 py-3 text-sm rounded-none focus:ring-1 focus:ring-gold focus:border-gold" type="text" required>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                            <div>
+                                <label class="block font-display text-[10px] font-semibold text-slate-400 mb-2 uppercase tracking-[0.15em]">Commodity</label>
+                                <select name="commodity" class="w-full bg-charcoal border border-white/10 text-white px-4 py-3 text-sm rounded-none focus:ring-1 focus:ring-gold focus:border-gold">
+                                    <option value="metals">Base Metals & Alloys</option>
+                                    <option value="scraps">Industrial Scraps</option>
+                                    <option value="agriculture">Bulk Agricultural Allocations</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-display text-[10px] font-semibold text-slate-400 mb-2 uppercase tracking-[0.15em]">Target Price (USD/MT)</label>
+                                <input name="target_price" class="w-full bg-charcoal/60 border border-white/10 text-white px-4 py-3 text-sm rounded-none focus:ring-1 focus:ring-gold focus:border-gold" type="text" required>
+                            </div>
+                            <div>
+                                <label class="block font-display text-[10px] font-semibold text-slate-400 mb-2 uppercase tracking-[0.15em]">Quantity Required (MT)</label>
+                                <input name="quantity" class="w-full bg-charcoal/60 border border-white/10 text-white px-4 py-3 text-sm rounded-none focus:ring-1 focus:ring-gold focus:border-gold" type="text" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block font-display text-[10px] font-semibold text-slate-400 mb-2 uppercase tracking-[0.15em]">Corporate Contact Info / Email</label>
+                            <input name="email" class="w-full bg-charcoal/60 border border-white/10 text-white px-4 py-3 text-sm rounded-none focus:ring-1 focus:ring-gold focus:border-gold" type="text" required>
+                        </div>
+
+                        <button class="w-full bg-gold text-charcoal font-display text-xs font-bold uppercase tracking-[0.2em] py-4 hover:bg-white transition-all" type="submit">
+                            Submit Inquiry Specification
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
