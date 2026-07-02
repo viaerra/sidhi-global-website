@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>SIDHI GLOBAL TRADING PVT LTD</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
     <script id="tailwind-config">
         tailwind.config = {
@@ -13,164 +13,191 @@
             theme: {
                 extend: {
                     colors: {
-                        "charcoal": "#0F141C",
-                        "gold": "#D4AF37",
-                        "surface-bright": "#f8f9ff",
-                        "on-surface-variant": "#45474b",
-                        "primary-container": "#171c24",
-                        "on-primary-fixed-variant": "#424750",
-                        "on-primary-container": "#7f848e",
-                        "tertiary-fixed-dim": "#e9c349"
+                        "charcoal": "#0B0F17",
+                        "slate-gray": "#1E2530",
+                        "gold": "#C5A059",
+                        "gold-dim": "#A38243",
+                        "border-slate": "rgba(255, 255, 255, 0.08)"
                     },
                     spacing: {
-                        "section-v-padding": "140px",
-                        "margin-desktop": "64px",
-                        "gutter": "32px",
-                        "container-max-width": "1440px"
+                        "section-padding": "100px"
                     },
                     fontFamily: {
-                        "display-lg": ["Montserrat", "sans-serif"],
-                        "headline-lg": ["Montserrat", "sans-serif"],
-                        "headline-md": ["Montserrat", "sans-serif"],
-                        "label-caps": ["Montserrat", "sans-serif"],
-                        "body-lg": ["Inter", "sans-serif"],
-                        "body-md": ["Inter", "sans-serif"]
+                        "sans": ["Inter", "sans-serif"],
+                        "display": ["Montserrat", "sans-serif"]
                     }
                 }
             }
         }
     </script>
     <style>
-        body { background-color: #0F141C; font-family: 'Inter', sans-serif; overflow-x: hidden; }
-        .font-display-lg { font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: 0.15em; line-height: 1.1; }
-        .font-headline-lg { font-family: 'Montserrat', sans-serif; font-weight: 600; letter-spacing: 0.1em; line-height: 1.2; }
-        .font-headline-md { font-family: 'Montserrat', sans-serif; font-weight: 600; letter-spacing: 0.05em; line-height: 1.3; }
-        .font-label-caps { font-family: 'Montserrat', sans-serif; font-weight: 700; letter-spacing: 0.2em; line-height: 1.5; }
-        .font-body-lg { font-family: 'Inter', sans-serif; font-weight: 400; letter-spacing: 0.01em; line-height: 1.8; }
-        .font-body-md { font-family: 'Inter', sans-serif; font-weight: 400; letter-spacing: 0.01em; line-height: 1.7; }
+        body { background-color: #0B0F17; font-family: 'Inter', sans-serif; overflow-x: hidden; }
         
-        /* Premium Liquid Glass Architectural Mixins */
-        .liquid-glass {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
-            backdrop-filter: blur(24px) saturate(140%);
-            -webkit-backdrop-filter: blur(24px) saturate(140%);
+        /* Premium Liquid Glass Engine */
+        .glass-card {
+            background: linear-gradient(180deg, rgba(30, 37, 48, 0.7) 0%, rgba(15, 20, 28, 0.85) 100%);
+            backdrop-filter: blur(20px) saturate(120%);
+            -webkit-backdrop-filter: blur(20px) saturate(120%);
             border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
         }
-        .liquid-glass-nav {
-            background: rgba(15, 20, 28, 0.75);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+        
+        .glass-nav {
+            background: rgba(11, 15, 23, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        /* Architectural Section Dividers */
+        .section-bracket {
+            position: relative;
+        }
+        .section-bracket::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0) 100%);
         }
     </style>
 </head>
-<body class="antialiased text-white selection:bg-gold selection:text-white">
+<body class="antialiased text-slate-200 selection:bg-gold selection:text-charcoal">
 
-    <!-- CDN-CACHED BACKGROUND CANVAS -->
+    <!-- STATIC STICKY DEEP SEASCAPE LAYER -->
     <div class="fixed inset-0 w-full h-full -z-10 overflow-hidden bg-charcoal">
-        <video autoplay loop muted playsinline webkit-playsinline preload="auto" class="w-full h-full object-cover opacity-25 pointer-events-none">
+        <video autoplay loop muted playsinline webkit-playsinline preload="auto" class="w-full h-full object-cover opacity-15 pointer-events-none">
             <source src="bg_vessel.mp4" type="video/mp4">
         </video>
     </div>
 
-    <!-- NAVIGATION HEADER -->
-    <nav class="liquid-glass-nav flex justify-between items-center px-margin-desktop h-24 w-full sticky top-0 z-50">
-        <div class="font-display-lg text-xl tracking-widest text-white">
+    <!-- MAIN CORPORATE NAVIGATION HEADER -->
+    <nav class="glass-nav flex justify-between items-center px-6 md:px-16 lg:px-24 h-24 w-full sticky top-0 z-50">
+        <div class="font-display font-bold text-lg tracking-[0.25em] text-white">
             SIDHI GLOBAL
         </div>
-        <div class="hidden md:flex gap-8 items-center">
-            <a class="font-label-caps text-xs uppercase text-gold border-b border-gold pb-1 transition-opacity duration-300" href="#trade">Trade</a>
-            <a class="font-label-caps text-xs uppercase text-slate-300 hover:text-white transition-colors duration-300" href="#portfolios">Portfolio</a>
-            <a class="font-label-caps text-xs uppercase text-slate-300 hover:text-white transition-colors duration-300" href="#trust">Trust</a>
-            <a class="font-label-caps text-xs uppercase text-slate-300 hover:text-white transition-colors duration-300" href="#operations">Operations</a>
+        <div class="hidden md:flex gap-10 items-center">
+            <a class="font-display text-xs uppercase font-medium tracking-[0.2em] text-gold border-b border-gold pb-1 transition-all" href="#trade">Trade</a>
+            <a class="font-display text-xs uppercase font-medium tracking-[0.2em] text-slate-400 hover:text-white transition-colors duration-300" href="#about">About Us</a>
+            <a class="font-display text-xs uppercase font-medium tracking-[0.2em] text-slate-400 hover:text-white transition-colors duration-300" href="#portfolios">Portfolio</a>
+            <a class="font-display text-xs uppercase font-medium tracking-[0.2em] text-slate-400 hover:text-white transition-colors duration-300" href="#trust">Trust</a>
+            <a class="font-display text-xs uppercase font-medium tracking-[0.2em] text-slate-400 hover:text-white transition-colors duration-300" href="#contact">Contact</a>
         </div>
         <div>
-            <a href="#inquiry" class="inline-block font-label-caps text-xs uppercase border border-gold px-8 py-3 text-gold hover:bg-gold hover:text-white transition-colors duration-300">
+            <button onclick="toggleInquiryModal(true)" class="font-display text-xs uppercase font-semibold tracking-[0.2em] border border-gold/60 px-6 py-3 text-gold hover:bg-gold hover:text-charcoal transition-all duration-300">
                 Inquire
-            </a>
+            </button>
         </div>
     </nav>
 
-    <!-- SECTION 1: HERO CANVAS -->
-    <section id="trade" class="relative bg-transparent py-section-v-padding px-margin-desktop min-h-[90vh] flex items-center">
-        <div class="relative z-10 w-full max-w-container-max-width mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+    <!-- SECTION 1: HERO CONTAINER -->
+    <main id="trade" class="relative px-6 md:px-16 lg:px-24 min-h-[92vh] flex items-center pt-8 pb-16">
+        <div class="w-full max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
             <div class="lg:col-span-7 space-y-8">
-                <h1 class="font-display-lg text-4xl md:text-5xl text-white drop-shadow-sm">
-                    DIRECTING GLOBAL<br>COMMODITY SUPPLY CHAINS
+                <div class="inline-flex items-center gap-2 border border-gold/30 bg-gold/5 px-4 py-1.5 rounded-full">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
+                    <span class="font-display text-[10px] uppercase tracking-[0.2em] text-gold font-medium">Institutional Commerce Architecture</span>
+                </div>
+                <h1 class="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-white tracking-wide leading-[1.15] drop-shadow-md">
+                    DIRECTING GLOBAL<br>COMMODITY NETWORKS
                 </h1>
-                <p class="font-body-lg text-lg text-slate-200 max-w-2xl bg-charcoal/40 backdrop-blur-md p-4 -ml-4 rounded-sm border border-white/5 inline-block">
-                    Orchestrated international sourcing and maritime distribution for enterprise markets. We bridge global producers with industrial consumers through certified quality protocols.
+                <p class="font-sans text-base md:text-lg font-light text-slate-300 leading-[1.8] max-w-2xl">
+                    Facilitating high-volume, secure cross-border supply lines across premium base metal structures and bulk agricultural logistics. Precision execution anchored by international compliance frameworks.
                 </p>
-                <div class="pt-4">
-                    <a href="#inquiry" class="inline-flex items-center gap-3 border border-gold text-gold bg-charcoal/90 font-label-caps text-sm uppercase px-12 py-5 hover:bg-gold hover:text-white transition-all duration-300 shadow-xl">
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <button onclick="toggleInquiryModal(true)" class="inline-flex items-center gap-3 border border-gold bg-gold text-charcoal font-display text-xs font-bold uppercase tracking-[0.15em] px-8 py-4 hover:bg-transparent hover:text-gold transition-all duration-300 shadow-lg">
                         Initiate Trade Inquiry
                         <span aria-hidden="true" class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                    <a href="#about" class="inline-flex items-center border border-white/10 bg-white/5 font-display text-xs font-medium uppercase tracking-[0.15em] px-8 py-4 hover:bg-white/10 transition-all text-white">
+                        Corporate Profile
                     </a>
                 </div>
             </div>
 
-            <!-- GLOBAL INQUIRY DESK INTERFACE -->
-            <div id="inquiry" class="lg:col-span-4 lg:col-start-9 mt-16 lg:mt-0">
-                <div class="liquid-glass p-8 rounded-sm">
-                    <h3 class="font-headline-md text-xl text-white mb-8 border-b border-white/10 pb-4">Trade Desk Order</h3>
-                    <form class="space-y-6" action="#" method="POST">
+            <!-- TRADE DESK INTERFACE MODULE -->
+            <div class="lg:col-span-5 lg:col-start-8">
+                <div class="glass-card p-8 rounded-none border border-white/10 shadow-2xl">
+                    <h3 class="font-display font-semibold text-lg text-white mb-6 tracking-wider border-b border-white/10 pb-4">Trade Desk Execution</h3>
+                    <form class="space-y-6" action="https://formspree.io/f/your_id_here" method="POST">
                         <div>
-                            <label class="block font-label-caps text-[10px] text-slate-400 mb-2 uppercase">Commodity Portfolio</label>
-                            <select class="w-full bg-charcoal/60 border-0 border-b border-slate-600 text-white py-2 focus:ring-0 focus:border-gold transition-colors font-body-md text-sm rounded-none">
-                                <option class="bg-charcoal text-white" value="metals">Industrial Base Metals, Alloys & Scraps</option>
-                                <option class="bg-charcoal text-white" value="agriculture">Large-Scale Bulk Agricultural Commodities</option>
+                            <label class="block font-display text-[10px] font-semibold text-slate-400 mb-2 uppercase tracking-[0.15em]">Commodity</label>
+                            <select name="commodity" class="w-full bg-charcoal/80 border border-white/10 text-white px-4 py-3 focus:ring-1 focus:ring-gold focus:border-gold transition-all text-sm rounded-none tracking-wide">
+                                <option value="metals">Industrial Base Metals, Alloys & Production Scraps</option>
+                                <option value="agriculture">Large-Scale Bulk Agricultural Commodities</option>
                             </select>
                         </div>
                         <div>
-                            <label class="block font-label-caps text-[10px] text-slate-400 mb-2 uppercase">Origin Hub</label>
-                            <input class="w-full bg-transparent border-0 border-b border-slate-600 text-white py-2 focus:ring-0 focus:border-gold transition-colors font-body-md text-sm rounded-none" placeholder="Sourcing Region (e.g. Dubai, Malaysia)" type="text" required>
+                            <label class="block font-display text-[10px] font-semibold text-slate-400 mb-2 uppercase tracking-[0.15em]">Quantity (MT)</label>
+                            <input name="quantity" class="w-full bg-charcoal/50 border border-white/10 text-white px-4 py-3 focus:ring-1 focus:ring-gold focus:border-gold transition-all text-sm rounded-none placeholder-slate-600" placeholder="Target Volume Allocation" type="text" required>
                         </div>
                         <div>
-                            <label class="block font-label-caps text-[10px] text-slate-400 mb-2 uppercase">Destination Port</label>
-                            <input class="w-full bg-transparent border-0 border-b border-slate-600 text-white py-2 focus:ring-0 focus:border-gold transition-colors font-body-md text-sm rounded-none" placeholder="Port of Discharge" type="text" required>
+                            <label class="block font-display text-[10px] font-semibold text-slate-400 mb-2 uppercase tracking-[0.15em]">Destination Port</label>
+                            <input name="destination" class="w-full bg-transparent border border-white/10 text-white px-4 py-3 focus:ring-1 focus:ring-gold focus:border-gold transition-all text-sm rounded-none placeholder-slate-600" placeholder="Port of Discharge (CIF/FOB)" type="text" required>
                         </div>
-                        <button class="w-full bg-white text-charcoal font-label-caps text-xs uppercase py-4 mt-4 hover:bg-gold hover:text-white transition-colors duration-300 font-semibold" type="submit">
+                        <button class="w-full bg-gold text-charcoal font-display text-xs font-bold uppercase tracking-[0.2em] py-4 mt-2 hover:bg-white hover:text-charcoal transition-all duration-300" type="submit">
                             Submit Specifications
                         </button>
                     </form>
                 </div>
             </div>
         </div>
+    </main>
+
+    <!-- SECTION 2: ABOUT US CORPORATE PROFILE -->
+    <section id="about" class="section-bracket relative px-6 md:px-16 lg:px-24 py-24 bg-charcoal/40">
+        <div class="w-full max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5 space-y-6">
+                <span class="font-display text-xs font-bold tracking-[0.25em] text-gold uppercase">Enterprise Operations</span>
+                <h2 class="font-display font-bold text-3xl md:text-4xl text-white tracking-wide leading-tight">About Sidhi Global Trading</h2>
+                <div class="w-16 h-0.5 bg-gold"></div>
+            </div>
+            <div class="lg:col-span-7 font-sans text-base font-light text-slate-300 leading-[1.8] space-y-6">
+                <p>
+                    Established under rigid compliance standards, **SIDHI GLOBAL TRADING PVT LTD** functions as a high-tier transactional network partner specializing in strategic high-volume asset movement. We direct cross-border trade pipelines that link institutional buyers with international refining and crop logistics terminals.
+                </p>
+                <p>
+                    Our operational framework prioritizes transactional finality, rigorous logistics tracking, and verified financial instrument clearance. Backed by structured banking relations and independent clearing verification, we mitigate risk across volatile global market structures.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <!-- SECTION 2: CORE TRADING PORTFOLIOS -->
-    <section id="portfolios" class="relative bg-transparent py-section-v-padding px-margin-desktop border-y border-white/5">
-        <div class="max-w-container-max-width mx-auto">
-            <div class="mb-20">
-                <h2 class="font-display-lg text-3xl text-white mb-6">GLOBAL TRADING PORTFOLIOS</h2>
-                <div class="w-24 h-1 bg-gold"></div>
+    <!-- SECTION 3: CORE TRADING PORTFOLIOS -->
+    <section id="portfolios" class="section-bracket relative px-6 md:px-16 lg:px-24 py-24">
+        <div class="w-full max-w-[1440px] mx-auto">
+            <div class="mb-16 flex flex-col items-start space-y-4">
+                <span class="font-display text-xs font-bold tracking-[0.25em] text-gold uppercase">Trade Allocations</span>
+                <h2 class="font-display font-bold text-3xl text-white tracking-wide">Global Trading Portfolios</h2>
+                <div class="w-16 h-0.5 bg-gold"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
-                <!-- Core Column 1: Metals (Liquid Glass Architecture Applied) -->
-                <div class="liquid-glass p-10 flex flex-col gap-6 justify-between transition-all duration-300 hover:border-gold/40 group">
+                <!-- Card 1: Metals -->
+                <div class="glass-card p-10 flex flex-col justify-between transition-all duration-300 hover:border-gold/40 group">
                     <div class="space-y-6">
-                        <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center border border-gold/20">
-                            <span aria-hidden="true" class="material-symbols-outlined text-2xl text-gold">deployed_code</span>
+                        <div class="w-12 h-12 bg-gold/10 border border-gold/20 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-xl text-gold">deployed_code</span>
                         </div>
-                        <h3 class="font-headline-lg text-2xl text-white tracking-wide leading-snug group-hover:text-gold transition-colors duration-300">
+                        <h3 class="font-display font-semibold text-xl text-white tracking-wider group-hover:text-gold transition-colors">
                             Industrial Base Metals, Alloys & Production Scraps
                         </h3>
-                        <p class="font-body-lg text-base text-slate-300 leading-relaxed">
+                        <p class="font-sans text-sm font-light text-slate-300 leading-[1.75]">
                             High-volume merchant trading of primary base metals, secondary alloys, premium ingots, and industrial recycling scraps. We leverage a robust global sourcing network to secure allocations directly from international trade markets, ensuring chemical continuity, competitive volume positioning, and strict adherence to material grading standards.
                         </p>
                     </div>
                 </div>
-                <!-- Core Column 2: Ag (Liquid Glass Architecture Applied) -->
-                <div class="liquid-glass p-10 flex flex-col gap-6 justify-between transition-all duration-300 hover:border-gold/40 group">
+                <!-- Card 2: Ag -->
+                <div class="glass-card p-10 flex flex-col justify-between transition-all duration-300 hover:border-gold/40 group">
                     <div class="space-y-6">
-                        <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center border border-gold/20">
-                            <span aria-hidden="true" class="material-symbols-outlined text-2xl text-gold">eco</span>
+                        <div class="w-12 h-12 bg-gold/10 border border-gold/20 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-xl text-gold">eco</span>
                         </div>
-                        <h3 class="font-headline-lg text-2xl text-white tracking-wide leading-snug group-hover:text-gold transition-colors duration-300">
+                        <h3 class="font-display font-semibold text-xl text-white tracking-wider group-hover:text-gold transition-colors">
                             Large-Scale Bulk Agricultural Commodities
                         </h3>
-                        <p class="font-body-lg text-base text-slate-300 leading-relaxed">
+                        <p class="font-sans text-sm font-light text-slate-300 leading-[1.75]">
                             Cross-border trade and distribution of high-demand agricultural commodities. Operating across established international maritime trade routes, our trading desk coordinates the secure procurement and transit of bulk volume allocations, ensuring compliance with global import regulations and strict quality standard practices.
                         </p>
                     </div>
@@ -179,98 +206,92 @@
         </div>
     </section>
 
-    <!-- SECTION 3: THE ARCHITECTURE OF TRUST -->
-    <section id="trust" class="relative py-section-v-padding bg-transparent border-b border-white/5">
-        <div class="relative z-10 max-w-container-max-width mx-auto px-margin-desktop">
-            <div class="text-center mb-20">
-                <h2 class="font-label-caps text-base text-white tracking-widest uppercase">The Architecture of Trust</h2>
-                <p class="font-body-md text-sm text-slate-400 mt-2">Ensuring complete transaction safety and material integrity across global waters.</p>
-                <div class="w-px h-16 bg-gold mx-auto mt-8"></div>
+    <!-- SECTION 4: THE ARCHITECTURE OF TRUST -->
+    <section id="trust" class="section-bracket relative px-6 md:px-16 lg:px-24 py-24 bg-charcoal/40">
+        <div class="w-full max-w-[1440px] mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="font-display text-xs font-bold tracking-[0.25em] text-gold uppercase">Transaction Governance</span>
+                <h2 class="font-display font-bold text-3xl text-white tracking-wide">The Architecture of Trust</h2>
+                <div class="w-12 h-0.5 bg-gold mx-auto"></div>
             </div>
             
-            <!-- Restructured Alignment: Symmetrical Grid Alignment -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch relative">
-                <div class="liquid-glass p-8 flex flex-col gap-4">
-                    <div class="flex items-center gap-4 border-b border-white/10 pb-4">
-                        <span class="material-symbols-outlined text-gold">verified_user</span>
-                        <h3 class="font-headline-md text-xl text-white">Independent Quality Inspections</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                <div class="glass-card p-8 flex gap-6 items-start">
+                    <span class="material-symbols-outlined text-gold text-2xl mt-1">verified_user</span>
+                    <div class="space-y-3">
+                        <h3 class="font-display font-semibold text-base text-white tracking-wider">Independent Quality Inspections</h3>
+                        <p class="font-sans text-sm font-light text-slate-300 leading-[1.7]">
+                            Every shipment is subject to rigid third-party verification prior to vessel departure. We partner exclusively with recognized global inspection firms (SGS / Bureau Veritas) to verify purity, grading, and weight parameters under standard international trade terms.
+                        </p>
                     </div>
-                    <p class="font-body-lg text-base text-slate-300 leading-relaxed">
-                        Every allocation undergoes exhaustive independent inspection (such as SGS or Bureau Veritas verification) at the loading port. We do not initiate maritime transit until purity, weight, and grade are comprehensively certified.
-                    </p>
                 </div>
                 
-                <div class="liquid-glass p-8 flex flex-col gap-4">
-                    <div class="flex items-center gap-4 border-b border-white/10 pb-4">
-                        <span class="material-symbols-outlined text-gold">gavel</span>
-                        <h3 class="font-headline-md text-xl text-white">Documentation & Compliance</h3>
+                <div class="glass-card p-8 flex gap-6 items-start">
+                    <span class="material-symbols-outlined text-gold text-2xl mt-1">gavel</span>
+                    <div class="space-y-3">
+                        <h3 class="font-display font-semibold text-base text-white tracking-wider">Documentation & Compliance Protocols</h3>
+                        <p class="font-sans text-sm font-light text-slate-300 leading-[1.7]">
+                            Full transaction transparency managed through strict international legal compliance codes. We orchestrate the complete verification chain—including clean Bills of Lading, HSN custom declarations, and banking compliance arrays.
+                        </p>
                     </div>
-                    <p class="font-body-lg text-base text-slate-300 leading-relaxed">
-                        Full orchestration of complex international trade documentation, verified Bills of Lading, and customs clearances to ensure seamless, legally compliant cross-border asset transfers.
-                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 4: SOVEREIGN OPERATIONS -->
-    <section id="operations" class="bg-transparent py-section-v-padding px-margin-desktop">
-        <div class="max-w-container-max-width mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <!-- Left Pane: Adjusted for symmetry -->
-            <div class="lg:col-span-5 liquid-glass p-10 border border-white/10 flex flex-col justify-between min-h-full">
-                <div>
-                    <h2 class="font-headline-lg text-2xl text-white mb-6">Cross-Border Market Access</h2>
-                    <p class="font-body-md text-base text-slate-300 mb-10 leading-relaxed">
-                        SIDHI GLOBAL TRADING PVT LTD operates as a primary counterparty across established international trade jurisdictions. We maintain active trade relations, asset clearance capabilities, and banking networks across key global commerce hubs—explicitly facilitating high-volume commodity positioning within the regions defined below.
-                    </p>
-                </div>
+    <!-- SECTION 5: SOVEREIGN NETWORKS & OPERATIONS -->
+    <section id="networks" class="section-bracket relative px-6 md:px-16 lg:px-24 py-24">
+        <div class="w-full max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            
+            <div class="lg:col-span-5 glass-card p-10 border border-white/10">
+                <span class="font-display text-xs font-bold tracking-[0.25em] text-gold uppercase block mb-4">Trade Reach</span>
+                <h2 class="font-display font-bold text-2xl text-white tracking-wide mb-6">Cross-Border Market Access</h2>
+                <p class="font-sans text-sm font-light text-slate-300 mb-8 leading-[1.75]">
+                    Our corporate identity and primary offices are based permanently in **India**. However, our logistics operations utilize deep banking connections, counterparty relations, and transactional clearings spanning these critical international markets:
+                </p>
                 <div class="space-y-4">
-                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
-                        <span class="font-headline-md text-base text-white">India</span>
-                        <span class="font-label-caps text-[10px] text-slate-400 uppercase tracking-wider">Corporate Hub / Origin</span>
+                    <div class="flex items-center justify-between border-b border-white/5 pb-3">
+                        <span class="font-display font-medium text-sm text-white">India</span>
+                        <span class="font-display text-[9px] font-semibold text-gold tracking-widest uppercase">Corporate Headquarters</span>
                     </div>
-                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
-                        <span class="font-headline-md text-base text-white">United States</span>
-                        <span class="font-label-caps text-[10px] text-slate-400 uppercase tracking-wider">Trading Interface</span>
+                    <div class="flex items-center justify-between border-b border-white/5 pb-3">
+                        <span class="font-display font-medium text-sm text-slate-300">United States</span>
+                        <span class="font-display text-[9px] text-slate-500 tracking-widest uppercase">Transaction Network</span>
                     </div>
-                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
-                        <span class="font-headline-md text-base text-white">Malaysia</span>
-                        <span class="font-label-caps text-[10px] text-slate-400 uppercase tracking-wider">Sourcing Center</span>
+                    <div class="flex items-center justify-between border-b border-white/5 pb-3">
+                        <span class="font-display font-medium text-sm text-slate-300">Malaysia</span>
+                        <span class="font-display text-[9px] text-slate-500 tracking-widest uppercase">Logistics Alignment</span>
                     </div>
-                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
-                        <span class="font-headline-md text-base text-white">China</span>
-                        <span class="font-label-caps text-[10px] text-slate-400 uppercase tracking-wider">Logistics Terminal</span>
+                    <div class="flex items-center justify-between border-b border-white/5 pb-3">
+                        <span class="font-display font-medium text-sm text-slate-300">China</span>
+                        <span class="font-display text-[9px] text-slate-500 tracking-widest uppercase">Logistics Alignment</span>
                     </div>
-                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
-                        <span class="font-headline-md text-base text-white">Dubai</span>
-                        <span class="font-label-caps text-[10px] text-slate-400 uppercase tracking-wider">Trade Management Desk</span>
+                    <div class="flex items-center justify-between border-b border-white/5 pb-3">
+                        <span class="font-display font-medium text-sm text-slate-300">Dubai</span>
+                        <span class="font-display text-[9px] text-slate-500 tracking-widest uppercase">Trading & Finance Channel</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Timeline Pane: Fluidly aligned and balanced -->
-            <div class="lg:col-span-7 liquid-glass p-10 border border-white/10">
-                <h3 class="font-label-caps text-sm text-white uppercase tracking-widest mb-12 border-b border-white/10 pb-4">The Execution Standard</h3>
+            <div class="lg:col-span-7 glass-card p-10">
+                <h3 class="font-display text-xs font-bold text-white uppercase tracking-widest mb-10 border-b border-white/5 pb-4">The Execution Standard</h3>
                 <div class="relative">
-                    <div class="absolute left-6 top-2 bottom-2 w-px bg-white/10"></div>
+                    <div class="absolute left-6 top-2 bottom-2 w-px bg-white/5"></div>
                     <div class="space-y-12">
-                        <!-- Protocol 1 -->
                         <div class="relative pl-16">
-                            <div class="absolute left-0 top-0 w-12 h-12 bg-charcoal border border-white/10 rounded-full flex items-center justify-center font-display-lg text-sm text-gold z-10">1</div>
-                            <h4 class="font-headline-md text-base text-white mb-2">Contractual Security (SPA/LC)</h4>
-                            <p class="font-body-md text-sm text-slate-300">Every transaction is anchored by international Sales Purchase Agreements and backed by verified Tier-1 bank instruments to guarantee complete financial risk mitigation.</p>
+                            <div class="absolute left-0 top-0 w-12 h-12 bg-charcoal border border-white/10 rounded-none flex items-center justify-center font-display font-semibold text-sm text-gold z-10">1</div>
+                            <h4 class="font-display font-semibold text-base text-white mb-2">Contractual Security (SPA)</h4>
+                            <p class="font-sans text-xs font-light text-slate-400 leading-relaxed">Transactions are locked via rigid Sales Purchase Agreements, backed directly by tier-one international trade instruments (DLC / SBLC) to eliminate risk profile variables.</p>
                         </div>
-                        <!-- Protocol 2 -->
                         <div class="relative pl-16">
-                            <div class="absolute left-0 top-0 w-12 h-12 bg-charcoal border border-white/10 rounded-full flex items-center justify-center font-display-lg text-sm text-gold z-10">2</div>
-                            <h4 class="font-headline-md text-base text-white mb-2">Global HSN Compliance</h4>
-                            <p class="font-body-md text-sm text-slate-300">Allocations are rigorously classified, documented, and matched to international customs protocols to guarantee smooth border clearance.</p>
+                            <div class="absolute left-0 top-0 w-12 h-12 bg-charcoal border border-white/10 rounded-none flex items-center justify-center font-display font-semibold text-sm text-gold z-10">2</div>
+                            <h4 class="font-display font-semibold text-base text-white mb-2">Global HSN & Tariff Compliance</h4>
+                            <p class="font-sans text-xs font-light text-slate-400 leading-relaxed">All materials are accurately categorized and certified according to harmonized customs systems, guaranteeing unhindered port operations.</p>
                         </div>
-                        <!-- Protocol 3 -->
                         <div class="relative pl-16">
-                            <div class="absolute left-0 top-0 w-12 h-12 bg-charcoal border border-white/10 rounded-full flex items-center justify-center font-display-lg text-sm text-gold z-10">3</div>
-                            <h4 class="font-headline-md text-base text-white mb-2">Maritime Port Delivery (FOB/CIF)</h4>
-                            <p class="font-body-md text-sm text-slate-300">We manage international risk transfer seamlessly, overseeing the secure handoff of verified bulk cargo at major deep-water ports under strict international maritime laws.</p>
+                            <div class="absolute left-0 top-0 w-12 h-12 bg-charcoal border border-white/10 rounded-none flex items-center justify-center font-display font-semibold text-sm text-gold z-10">3</div>
+                            <h4 class="font-display font-semibold text-base text-white mb-2">Maritime Port Transfer (FOB/CIF)</h4>
+                            <p class="font-sans text-xs font-light text-slate-400 leading-relaxed">Clear logistics orchestration under precise Incoterms rules, ensuring full tracking and secure title handovers at international deep-water ocean docks.</p>
                         </div>
                     </div>
                 </div>
@@ -278,24 +299,109 @@
         </div>
     </section>
 
-    <!-- CORPORATE FOOTER -->
-    <footer class="bg-black/80 backdrop-blur-md grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop py-16 w-full border-t border-white/10 z-10 relative">
-        <div class="md:col-span-12 mb-8">
-            <div class="font-display-lg text-xl tracking-widest text-white">SIDHI GLOBAL</div>
-            <p class="font-body-md text-sm text-slate-400 mt-2 max-w-md">Institutional Grade Excellence in Global Commodity Trading.</p>
+    <!-- INTERACTIVE POPUP INQUIRY MODAL LAYER -->
+    <div id="inquiryModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-charcoal/80 backdrop-blur-xl flex items-center justify-center p-4">
+        <div class="glass-card w-full max-w-lg p-8 border border-white/10 relative">
+            <button onclick="toggleInquiryModal(false)" class="absolute top-6 right-6 text-slate-400 hover:text-white transition-colors">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <h3 class="font-display font-semibold text-xl text-white mb-6 border-b border-white/5 pb-4 tracking-wide">Initiate Enterprise Inquiry</h3>
+            <form class="space-y-6" action="https://formspree.io/f/your_id_here" method="POST">
+                <div>
+                    <label class="block font-display text-[10px] font-semibold text-slate-400 mb-2 uppercase tracking-widest">Company Name</label>
+                    <input name="company" class="w-full bg-charcoal/60 border border-white/10 text-white px-4 py-3 text-sm rounded-none focus:ring-1 focus:ring-gold focus:border-gold" type="text" required>
+                </div>
+                <div>
+                    <label class="block font-display text-[10px] font-semibold text-slate-400 mb-2 uppercase tracking-widest">Corporate Email</label>
+                    <input name="email" class="w-full bg-charcoal/60 border border-white/10 text-white px-4 py-3 text-sm rounded-none focus:ring-1 focus:ring-gold focus:border-gold" type="email" required>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block font-display text-[10px] font-semibold text-slate-400 mb-2 uppercase tracking-widest">Commodity</label>
+                        <select name="modal-commodity" class="w-full bg-charcoal/60 border border-white/10 text-white px-4 py-3 text-sm rounded-none focus:ring-1 focus:ring-gold focus:border-gold">
+                            <option value="metals">Base Metals</option>
+                            <option value="agriculture">Agricultural Commodities</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block font-display text-[10px] font-semibold text-slate-400 mb-2 uppercase tracking-widest">Quantity (MT)</label>
+                        <input name="modal-qty" class="w-full bg-charcoal/60 border border-white/10 text-white px-4 py-3 text-sm rounded-none focus:ring-1 focus:ring-gold focus:border-gold" type="text" required>
+                    </div>
+                </div>
+                <div>
+                    <label class="block font-display text-[10px] font-semibold text-slate-400 mb-2 uppercase tracking-widest">Specifications / Port</label>
+                    <textarea name="specs" rows="3" class="w-full bg-charcoal/60 border border-white/10 text-white px-4 py-3 text-sm rounded-none focus:ring-1 focus:ring-gold focus:border-gold" placeholder="Provide grading, purity info, and target discharge port..."></textarea>
+                </div>
+                <button class="w-full bg-gold text-charcoal font-display text-xs font-bold uppercase tracking-widest py-4 hover:bg-white transition-colors duration-300" type="submit">
+                    Submit Formal Request
+                </button>
+            </form>
         </div>
-        <div class="md:col-span-12 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-            <div class="flex flex-wrap gap-6">
-                <a class="font-body-md text-xs text-slate-400 hover:text-gold transition-colors" href="#">Legal Compliance</a>
-                <a class="font-body-md text-xs text-slate-400 hover:text-gold transition-colors" href="#">International Inquiry</a>
-                <a class="font-body-md text-xs text-slate-400 hover:text-gold transition-colors" href="#">Privacy Policy</a>
-                <a class="font-body-md text-xs text-slate-400 hover:text-gold transition-colors" href="#">Regulatory Filings</a>
+    </div>
+
+    <!-- RE-ENGINEERED HIGH-CONTRAST CORPORATE FOOTER -->
+    <footer id="contact" class="section-bracket relative bg-charcoal px-6 md:px-16 lg:px-24 py-16 z-10 border-t border-white/10">
+        <div class="w-full max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
+            
+            <div class="md:col-span-4 space-y-4">
+                <div class="font-display font-bold text-lg tracking-[0.25em] text-white">SIDHI GLOBAL</div>
+                <p class="font-sans text-xs font-light text-slate-400 leading-relaxed max-w-sm">
+                    Institutional Grade Excellence in Global Commodity Trading and Value-Added Maritime Logistics.
+                </p>
             </div>
-            <div class="font-body-md text-slate-500 text-xs">
+            
+            <div class="md:col-span-4 space-y-4">
+                <h4 class="font-display text-xs font-semibold uppercase tracking-widest text-gold">Corporate Inquiries</h4>
+                <div class="space-y-2 font-sans text-xs font-light text-slate-300">
+                    <a href="mailto:info@sidhiglobal.com" class="flex items-center gap-2 hover:text-gold transition-colors">
+                        <span class="material-symbols-outlined text-sm text-gold-dim">mail</span>
+                        info@sidhiglobal.com
+                    </a>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-sm text-gold-dim">call</span>
+                        +91 80 4956 7890
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:col-span-4 space-y-4">
+                <h4 class="font-display text-xs font-semibold uppercase tracking-widest text-gold">Headquarters Office</h4>
+                <div class="font-sans text-xs font-light text-slate-300 flex items-start gap-2 leading-relaxed">
+                    <span class="material-symbols-outlined text-sm text-gold-dim mt-0.5">location_on</span>
+                    <span>
+                        Bengaluru, Karnataka,<br>
+                        India
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full max-w-[1440px] mx-auto border-t border-white/5 pt-8 flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div class="flex flex-wrap gap-6 font-sans text-[11px] font-light text-slate-400">
+                <a class="hover:text-gold transition-colors" href="#">Legal Compliance</a>
+                <a class="hover:text-gold transition-colors" href="#">International Inquiry</a>
+                <a class="hover:text-gold transition-colors" href="#">Privacy Policy</a>
+                <a class="hover:text-gold transition-colors" href="#">Regulatory Filings</a>
+            </div>
+            <div class="font-sans text-slate-500 text-[10px] font-light text-center sm:text-right">
                 © 2026 SIDHI GLOBAL TRADING PVT LTD. All Rights Reserved. Institutional Grade Excellence.
             </div>
         </div>
     </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT CONTROLLERS -->
+    <script>
+        function toggleInquiryModal(show) {
+            const modal = document.getElementById('inquiryModal');
+            if (show) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            } else {
+                modal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }
+    </script>
 
 </body>
 </html>
